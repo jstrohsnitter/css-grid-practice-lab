@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 3fr; */
+    grid-template-areas: 
+    "hd1 hd2 . . . ." 
+    "mn1 mn2 m3 . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ; 
+    min-height: 100vh;
+    padding: 40px;
+    height: 500px;
+}
+
+.SeeMore1 {
+    width: 200px;
+    height: 60px;
+    grid-area: hd1;  
+}
+
+.SeeMore2 {
+    width: 200px;
+    height: 60px;
+    grid-area: hd2;   
+}
+
+.rectangle1 {
+    width: 270px;
+    height: 436px;
+    border: 1px solid black;
+    grid-area: mn1;
+    margin-right: 30px;
+}
+
+.rectangle2 {
+    width: 270px;
+    height: 420px;
+    border: 1px solid blue;  
+    grid-area: mn2;
+    margin-right: 30px;
+}
+
+.rectangle3 {
+    width: 370px;
+    height: 502px;
+    border: 1px solid red;
+    grid-area: m3;
+}
